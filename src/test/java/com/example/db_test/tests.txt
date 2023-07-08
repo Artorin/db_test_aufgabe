@@ -1,0 +1,26 @@
+//tests
+
+        // http://localhost:8081/station/AA/train/9/waggon/264
+        // {"sections":["E"]}
+
+        // http://localhost:8081/station/ABCH/train/173/waggon/257
+        // {"sections":["C","D"]}
+
+        // http://localhost:8081/station/ABCH/train/909/waggon/27
+        // {"sections":["A"]}
+
+        // http://localhost:8081/station/ABVS/train/2182/waggon/11
+        // {"sections":["E"]}
+
+        // http://localhost:8081/station/ABVS/train/2181/waggon/7
+        // {"sections":["A"]}
+
+        // http://localhost:8081/station/AA/train/99999/waggon/1
+        // err 404 - because there is no train with 99999 number
+
+        // http://localhost:8081/station/AA/train/71/waggon/1
+        // {"sections":["E"],"sections2":["E"]}
+        // (cos duplicates in row xml)
+
+        // http://localhost:8081/station/AA/train/71/waggon/111
+        // err 404 - because there is no waggon with 111 number
